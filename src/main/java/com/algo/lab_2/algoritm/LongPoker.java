@@ -53,10 +53,11 @@ public class LongPoker {
 
             else {
 
+                int neededJokers = array.itemAt(index + 1) - array.itemAt(index) - 1;
+
                 if (array.itemAt(index) + availableJokers >= array.itemAt(index + 1) - 1) {
-                    int usedJokers = array.itemAt(index + 1) - array.itemAt(index) - 1;
-                    availableJokers -= usedJokers;
-                    currentStreak += usedJokers + 1;
+                    availableJokers -= neededJokers;
+                    currentStreak += neededJokers + 1;
                     index++;
                     if (revizitedIndex == -1) {
                         revizitedIndex = index;
@@ -70,7 +71,10 @@ public class LongPoker {
                     }
                     availableJokers = jokersCount;
                     currentStreak = 0;
-                    if (revizitedIndex == -1) {
+                    if (neededJokers > jokersCount) {
+                        revizitedIndex = -1;
+                        index++;
+                    } else if (revizitedIndex == -1) {
                         index++;
                     } else {
                         index = revizitedIndex;
