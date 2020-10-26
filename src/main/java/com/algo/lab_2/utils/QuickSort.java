@@ -1,4 +1,4 @@
-package com.algo.lab_3.utils;
+package com.algo.lab_2.utils;
 
 public class QuickSort {
     public static void sort(MyArrayList<Integer> givenArray) {

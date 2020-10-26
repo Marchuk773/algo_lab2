@@ -1,8 +1,8 @@
-package com.algo.lab3;
+package com.algo.lab2;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import com.algo.lab_3.algoritm.LongPoker;
+import com.algo.lab_2.algoritm.LongPoker;
 
 public class AppTest {
 

@@ -1,9 +1,9 @@
-package com.algo.lab_3.algoritm;
+package com.algo.lab_2.algoritm;
 
 import java.io.IOException;
-import com.algo.lab_3.utils.MyArrayList;
-import com.algo.lab_3.utils.MyFileReader;
-import com.algo.lab_3.utils.QuickSort;
+import com.algo.lab_2.utils.MyArrayList;
+import com.algo.lab_2.utils.MyFileReader;
+import com.algo.lab_2.utils.QuickSort;
 
 public class LongPoker {
 
@@ -77,9 +77,7 @@ public class LongPoker {
                         revizitedIndex = -1;
                     }
                 }
-
             }
-
         }
 
         currentStreak += availableJokers;

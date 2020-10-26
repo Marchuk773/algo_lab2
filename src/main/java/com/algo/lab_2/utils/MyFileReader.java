@@ -1,4 +1,4 @@
-package com.algo.lab_3.utils;
+package com.algo.lab_2.utils;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

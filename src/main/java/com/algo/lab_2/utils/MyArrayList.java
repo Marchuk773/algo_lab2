@@ -1,4 +1,4 @@
-package com.algo.lab_3.utils;
+package com.algo.lab_2.utils;
 
 import java.util.Iterator;
 import java.util.Random;
@@ -16,7 +16,7 @@ public class MyArrayList<T> implements Iterable<T> {
 
     @SuppressWarnings("unchecked")
     public MyArrayList(int capacity) {
-        array = (T[]) new Object[capacity * 2];
+        array = (T[]) new Object[capacity];
     }
 
     public void push(T item) {
